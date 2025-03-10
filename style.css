@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: #222;
+    color: white;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#game-container {
+    flex: 1;
+}
+
+#ui-container {
+    width: 250px;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#status, #player-info, #turn-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+#reset-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #45a049;
+}
+
+#reset-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
